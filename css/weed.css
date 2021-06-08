@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+body {
+font-size: 2rem;
+font-family: 'Oi';
+color: #ff00ea;
+background-image: url("../img/sans.gif");
+-ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.normal {
+    color: #fff;
+}
+
+.normal, a {
+    font-family: "Quicksand";
+}
+a {
+    color: #000;
+    text-decoration: none;
+  }
+a:hover {
+    color: #0000FF;
+}
+  
+  a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  .weed {
+    font-family: 'Oi', cursive;
+    color: #ff00ea;
+  }
+  .abnormal {
+    font-family: 'Amatic SC', cursive;
+  }

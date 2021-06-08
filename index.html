@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <noscript>
+        <div class="content noscript">        
+            <h1>Get out of the 90's!</h1>
+            <hr>
+            <h2>This site needs my sh*tty Javascript in order to run properly.</h2>
+            <p>If you wish to use any of the active elements of this page,</p>
+            <p>please use a newer browser, or enable Javascript in your settings.</p>
+            <p>Conventiently, I have a list of the latest supported browser for each operating system here.</p>
+        </div>
+    </noscript>
+    <link rel="icon" type="image/png" href="./img/logo.svg">
+    <link rel="stylesheet" href="css/bootstrap-custom.css">
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/siri.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | siri-chan.github.io</title>
+</head>
+<body>
+    <div id = "h"></div>
+    <div class="content">
+        <div class="coolvisuals">
+            <br> <br>
+            <h1>Hi! I'm Siri!</h1>
+            <h3>I am developing: </h3>
+            <h2>
+                <span id="changer"><a href="https://github.com/Siri-chan">Code</a></span>
+            </h2>
+            <!--Add: UnityFPS, Terminal Games to this list  -->
+            <script>
+                var words = ["<a href=\"https://github.com/Siri-chan/osuclone\">osu!clone</a>", "<a href=\"https://github.com/Siri-chan/muscl\" class=\"muscli\">MusCLI</a>","<a href=\"https://github.com/Siri-chan/men\" class=\"men\">men</a>", "<a href=\"\"> Other, Smaller Open-Source Projects</a>"];  
+                var i = -1;
+                var text = "<a href=\"https://github.com/Siri-chan\">Code</a>";      
+                function _getChangedText() {
+                    i = (i + 1) % words.length;
+                    return text.replace("<a href=\"https://github.com/Siri-chan\">Code</a>", words[i]);
+                }
+                function _changeText() {
+                    var txt = _getChangedText();
+                    var d = document.getElementById("changer")
+                    d.className = "fadeOut";
+                    setTimeout(function(){
+                        d.className = "fadeIn"
+                        document.getElementById("changer").innerHTML = txt;
+                    }, 1000);
+                }
+                setInterval("_changeText()", 3000);
+            </script>
+             <br>
+        </div>
+        <br> <br> <br>
+        <div class="row">
+            <div class="col"><p>Also take a look at: </p></div>
+            <div class="col"><h3><a href="./music.html">My Music</a></h3></div>
+            <div class="col"><h3><a>My Art</a></h3></div>
+            <div class="col"><h3><a>My Writing</a></h3></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"><a href="./music.html" class="nohover">Lofi, Soundtracks, etc.</a></div>
+            <div class="col"><a>Drawings, Prints, Infographics, etc.</a></div>
+            <div class="col"><a>Theses, Research, Notices, etc.</a></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <script>
+            window.onscroll = function ()
+            {
+                document.getElementById("scroll").className = "fadeOut";
+                setTimeout(function(){
+                    document.getElementById("scroll").innerHTML = "<br>";
+                }, 1000);
+            }
+        </script>
+        <p id="scroll">(You can scroll me)</p>
+        <br>
+        <hr style="border-top: 5px dashed #056072; color: #222b3d;">
+        <br>
+        <br>
+        <section id="about">        
+            <h1>About Me:</h1>
+            <p>Hi! I'm Siri. I'm a software developer. I work a lot with C# and the Unity game engine, but I am perfectly capable with a lot of modern languages.</p>
+            <p>In the past, I have written programs in C, C++, Java, JavaScript, Processing, C#, PHP, Bash, Batch, Python and even x86 ASM.</p>
+            <p>I usually exercise my code skills by developing games, but (as this website shows), I am capable with a lot more.</p>
+            <p>When I make my own games, I usually create a lot of the assets. That means I've gained a bit of a proficiency with music and art.</p>
+            <!--
+            <p>When I make my own games, I usually create a lot of the assets. That means I've gained a bit of a proficiency with music, art and the dreaded ...</p>
+            <p>3D Models!</p>
+            <div class="row">
+                [insert images of my cursed *lack of* modelling skill here]
+            </div>
+            -->
+            <p></p>
+        </section>
+        <br>
+        <br>        
+        <br>
+    </div>
+    <div id="f"></div>
+</body>
+</html>

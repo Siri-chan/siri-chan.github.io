@@ -1,0 +1,34 @@
+---MAIN---
+siri.js
+	fix nav for mobile
+index.html
+	replace links on cycling text with github pages/about stuffs
+	about me
+code.html
+	list of smaller projects
+music.html
+writing.html
+resources.html
+	keep up to date
+elsewhere.html 
+	get curious cat logo svg
+404.html
+secret page
+	TRUCK MONTH
+license / terms 
+	page describing gpl3 (ormaybe fwd to gnu site)
+	page with short privacy policy maybe (idk yet)
+	page DOESN'T use cookies (or does later idk)
+other
+	give every page <section id="about"> tags appropriately 
+		(use <a href="eg. index.html#about> to link to section)
+		(use <a name=""> around the section to create shorter ids)
+
+---BROWSER-DL---
+finish up links/research
+test everything
+tidy up 
+?concieve a better title
+
+---OTHER---
+?legacy ver of whole site
