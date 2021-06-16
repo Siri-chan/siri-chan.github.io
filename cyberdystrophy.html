@@ -33,7 +33,10 @@
         .dictionary {
             background-color: aliceblue;
             color: black;
+            font-family: 'Noto Sans JP', sans-serif;
+            /*
             font-family: 'Source Serif Pro', serif;
+            */
         }
         .d-word {
             font-weight: 600;
@@ -87,15 +90,18 @@
         .you {
             font-family: 'Give You Glory', cursive;
         }
+        .smaller {
+            font-size: 40pt;
+        }
     </style>
     <title>./c̴̫̤̙̫̾y̴̪̠̟̝̩͒b̷̡͇̙͒͜e̵͖̣͍͎̩̜͍͙̐̕͠ͅr̵̙̫̭̙̗̅́͂̈́̆̈́͜d̴̜͎̓̈́͒ý̵̨͖̣͙̭̤̠̝̊̍̎̿͋s̴̮̰̞̑t̷̝͈͙͈͙̮̊̓̅r̴̢̤̲̜̋̽̑ō̵̙͖̪̖̲̦̙͗̔͠p̴̟̜͍̼̀͌̾̏̋̓͆̕h̸̥̄y̸͖̝̝̣͒̊̆̊̈́͘̚͠</title>
 </head>
 <body>
     <!-- <div id = "h"></div> -->
     <div id ="c" class="content">
-        <div class="dictionary">
+        <div id="dictionary" class="dictionary">
             <br> <br>
-            <h1 class="d-word">Cyberdystrophy</h1> 
+            <h1 id="dictionary-title" class="d-word">Cyberdystrophy</h1> 
             <p class="d-subtitle">[noun]  /saɪ.bər-  &nbsp; dɪs.trə.fi/</p>
             <p class="d-mainText">A progressive illness in which a person develops a dependence for the personal computer, until a recovery is no longer possible.</p>
             <p class="d-mainText">Cyberdystrophy is most common to start developing among young adults, teenagers and children, as most people over the age of thiry-five struggle to keep up with the development of modern technology.</p>
@@ -119,19 +125,38 @@
         -->
     </div>
         <script>
-            var d = document.getElementById("x");
-            var c = document.getElementById("c");
-            var cum = "<h3 class=\"mom\">are you there?</h3>" + " <h4 class=\"dad\">you havent left your room in days.</h4>" + "<span class=\"mom\" style=\"font-size: 12pt;\">why wont you let us in? <br></span>" + "<span class=\"dad\" style=\"font-size: 5pt;\">we wont hurt you. <br></span>" + "<span class=\"mom\" style=\"font-size: 8pt;\">we're just worried. <br></span>" + "<span class=\"you\" style=\"font-size: 24pt;\">d̶̪̀̉o̵̻̎̀n̶̗͋̕'̵̧͖̊ṯ̸͋͒ ̷̰̬̾̐ẇ̷͍̯o̵̬̅̚r̶̳̘͊̅r̴̼̗͌̏y̷̦͎͝͠,<br></span> <br> <br> <span class=\"you\" style=\"font-size: 48pt;\">i̸̪̐̍'̵͇̬̝̻̹̈́̑̐̕͝ṁ̸̨̡̞͇̺̯͗̓͐̕ ̷̟͕̱̮͕̪͂̒̚j̴̡̡̭̜͔͈̆̆̈́̎ų̵̊͌s̵̡̨̮͈̑́̊ͅt̴̤̿̀̍́̄ ̸̨̼̫͖̠͉̑̄̔̉͠f̶̛͖͚́͒͗̓í̶̤̜͇̠̦̣n̸͉̘̼̝̼̒͐̑͒̔ë̶̻̣͚̟̲́̈́̽̐̄̚ͅ.<br></span> <span class=\"you\" style=\"font-size: 17pt;\">please just go away.<br></span>";
-            var cum2 = "<h3 class=\"mom\">why are you still stuck to that screen</h3>" + " <h4 class=\"dad\">we're geting worried.</h4>";
-            var pog = Math.floor(Math.random() * 10);
-            console.log(pog);
-            if(pog == 3) {
-                c.classList.add("flicker");
-                d.innerHTML = cum2;
+            window.onload = () => {
+                var d = document.getElementById("x");
+                var c = document.getElementById("c");
+                var i = -1;
+                const h = ["","","",
+                "<h3 class=\"mom\">are you there?</h3> <h4 class=\"dad\">you havent left your room in days.</h4> <span class=\"mom\" style=\"font-size: 12pt;\">why wont you let us in? <br></span> <span class=\"dad\" style=\"font-size: 5pt;\">we wont hurt you. <br></span>" + "<span class=\"mom\" style=\"font-size: 8pt;\">we're just worried. <br></span>" +
+                "<span class=\"you\" style=\"font-size: 24pt;\">d̶̪̀̉o̵̻̎̀n̶̗͋̕'̵̧͖̊ṯ̸͋͒ ̷̰̬̾̐ẇ̷͍̯o̵̬̅̚r̶̳̘͊̅r̴̼̗͌̏y̷̦͎͝͠,<br></span> <br> <br> <span class=\"you\" style=\"font-size: 48pt;\">i̸̪̐̍'̵͇̬̝̻̹̈́̑̐̕͝ṁ̸̨̡̞͇̺̯͗̓͐̕ ̷̟͕̱̮͕̪͂̒̚j̴̡̡̭̜͔͈̆̆̈́̎ų̵̊͌s̵̡̨̮͈̑́̊ͅt̴̤̿̀̍́̄ ̸̨̼̫͖̠͉̑̄̔̉͠f̶̛͖͚́͒͗̓í̶̤̜͇̠̦̣n̸͉̘̼̝̼̒͐̑͒̔ë̶̻̣͚̟̲́̈́̽̐̄̚ͅ.<br></span> <span class=\"you\" style=\"font-size: 17pt;\">please just go away.<br></span>", 
+                "<h3 class=\"mom\">why are you still stuck to that screen</h3>" + " <h4 class=\"dad\">we're geting worried.</h4>", "<span class=\"mom\"> we just want to help <br> </span> <span class=\"dad\">please let us in.<span>", "","","","","","","",""]
+                var txt = ["Cyberdystrophy", "「サイバー・ディスットロフィー」"]
+                var dict = document.getElementById("dictionary-title");
+                // var pog = 5
+                var pog = Math.floor(Math.random() * h.length);
+                if(h[pog] != ""){
+                    c.classList.add("flicker");
+                    d.innerHTML = h[pog]
+                    if(h[pog] == "<span class=\"mom\"> we just want to help <br> </span> <span class=\"dad\">please let us in.<span>"){
+                        changeText(txt, dict);
+                    }
+                }
             }
-            else if (pog == 4) {
-                c.classList.add("flicker");
-                d.innerHTML = cum;
+            function changeText(txt, dict){
+                let i = 0;
+                const cycleText = () => {
+                    dict.innerHTML = txt[i];
+                    i = Math.floor(Math.random() * (txt.length + 3));
+                    i-= 3;
+                    if(i < 0){
+                        i = 0;
+                    }
+                };
+                cycleText();
+                setInterval(cycleText, 125);
             }
         </script>
     <!-- <div id="f"></div> -->
