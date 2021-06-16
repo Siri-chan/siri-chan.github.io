@@ -27,6 +27,9 @@
     <style>
         /*Dictionary Styling*/
         @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap');
         .dictionary {
             background-color: aliceblue;
             color: black;
@@ -43,12 +46,53 @@
         .d-mainText{
             font-weight: 400;
         }
+
+        /*
+        i̵̯̔̀t̷̲̤̃̔ ̴̥̖̀ȉ̴̲̾s̵͙͇͐̕ǹ̷̯̙̀'̴͇͖̽t̶̢̹͋ ̷̭͇̇w̶̤͆o̶̞̩̾r̸̢͚̎ḵ̴̽̆i̴̘̐n̴͓̦̓̅g̷̨͔̃
+        */
+        @keyframes textflicker {
+            from {
+                text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+            }
+            to {
+                text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+            }
+        }
+        @keyframes text-flicker {
+            from {
+                text-shadow: 2px 0 0 #ea36af, -1px 0 0 #75fa69, 3px 0 0 #003f92;
+            }
+            to {
+                text-shadow: 3px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69, 3px 0.2px 1px #003f92;
+            }
+        }
+        .flicker {
+            animation-duration: 0.1s;
+            animation-name: textflicker;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }        
+        .strong-flicker {
+            animation-duration: 0.1s;
+            animation-name: text-flicker;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .dad {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .mom {
+            font-family: 'Michroma', sans-serif;
+        }
+        .you {
+            font-family: 'Give You Glory', cursive;
+        }
     </style>
-    <title>./cyberdystrophy | siri-chan.github.io</title>
+    <title>./c̴̫̤̙̫̾y̴̪̠̟̝̩͒b̷̡͇̙͒͜e̵͖̣͍͎̩̜͍͙̐̕͠ͅr̵̙̫̭̙̗̅́͂̈́̆̈́͜d̴̜͎̓̈́͒ý̵̨͖̣͙̭̤̠̝̊̍̎̿͋s̴̮̰̞̑t̷̝͈͙͈͙̮̊̓̅r̴̢̤̲̜̋̽̑ō̵̙͖̪̖̲̦̙͗̔͠p̴̟̜͍̼̀͌̾̏̋̓͆̕h̸̥̄y̸͖̝̝̣͒̊̆̊̈́͘̚͠</title>
 </head>
 <body>
-    <div id = "h"></div>
-    <div class="content">
+    <!-- <div id = "h"></div> -->
+    <div id ="c" class="content">
         <div class="dictionary">
             <br> <br>
             <h1 class="d-word">Cyberdystrophy</h1> 
@@ -59,11 +103,37 @@
             <br>
             <hr>
         </div>
+        <br>
+        <br>
+        <br>
+        <div id="x" class="strong-flicker">
+        </div>
+        <!-- 
+        c̴̫̤̙̫̾y̴̪̠̟̝̩͒b̷̡͇̙͒͜e̵͖̣͍͎̩̜͍͙̐̕͠ͅr̵̙̫̭̙̗̅́͂̈́̆̈́͜d̴̜͎̓̈́͒ý̵̨͖̣͙̭̤̠̝̊̍̎̿͋s̴̮̰̞̑t̷̝͈͙͈͙̮̊̓̅r̴̢̤̲̜̋̽̑ō̵̙͖̪̖̲̦̙͗̔͠p̴̟̜͍̼̀͌̾̏̋̓͆̕h̸̥̄y̸͖̝̝̣͒̊̆̊̈́͘̚͠ 
+
+
         <h3>My new album, Cyberdystrophy</h3>
         <p>Releasing</p> 
         <p>well...</p>
         <p>eventually.</p>
+        -->
     </div>
-    <div id="f"></div>
+        <script>
+            var d = document.getElementById("x");
+            var c = document.getElementById("c");
+            var cum = "<h3 class=\"mom\">are you there?</h3>" + " <h4 class=\"dad\">you havent left your room in days.</h4>" + "<span class=\"mom\" style=\"font-size: 12pt;\">why wont you let us in? <br></span>" + "<span class=\"dad\" style=\"font-size: 5pt;\">we wont hurt you. <br></span>" + "<span class=\"mom\" style=\"font-size: 8pt;\">we're just worried. <br></span>" + "<span class=\"you\" style=\"font-size: 24pt;\">d̶̪̀̉o̵̻̎̀n̶̗͋̕'̵̧͖̊ṯ̸͋͒ ̷̰̬̾̐ẇ̷͍̯o̵̬̅̚r̶̳̘͊̅r̴̼̗͌̏y̷̦͎͝͠,<br></span> <br> <br> <span class=\"you\" style=\"font-size: 48pt;\">i̸̪̐̍'̵͇̬̝̻̹̈́̑̐̕͝ṁ̸̨̡̞͇̺̯͗̓͐̕ ̷̟͕̱̮͕̪͂̒̚j̴̡̡̭̜͔͈̆̆̈́̎ų̵̊͌s̵̡̨̮͈̑́̊ͅt̴̤̿̀̍́̄ ̸̨̼̫͖̠͉̑̄̔̉͠f̶̛͖͚́͒͗̓í̶̤̜͇̠̦̣n̸͉̘̼̝̼̒͐̑͒̔ë̶̻̣͚̟̲́̈́̽̐̄̚ͅ.<br></span> <span class=\"you\" style=\"font-size: 17pt;\">please just go away.<br></span>";
+            var cum2 = "<h3 class=\"mom\">why are you still stuck to that screen</h3>" + " <h4 class=\"dad\">we're geting worried.</h4>";
+            var pog = Math.floor(Math.random() * 10);
+            console.log(pog);
+            if(pog == 3) {
+                c.classList.add("flicker");
+                d.innerHTML = cum2;
+            }
+            else if (pog == 4) {
+                c.classList.add("flicker");
+                d.innerHTML = cum;
+            }
+        </script>
+    <!-- <div id="f"></div> -->
 </body>
 </html>
