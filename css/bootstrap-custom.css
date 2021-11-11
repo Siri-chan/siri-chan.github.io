@@ -37,6 +37,11 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+  #some-element { display: none; }
+}
+
 *,
 *::before,
 *::after {

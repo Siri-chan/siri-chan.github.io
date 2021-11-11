@@ -1,19 +1,25 @@
 ---MAIN---
 siri.js
-	fix nav for mobile
 index.html
 	replace links on cycling text with github pages/about stuffs
 	about me
+animelist.html
+	actually put shit in here lol
 code.html
 	list of smaller projects
+art.html
+	actually fill
 music.html
+	remember to keep up to date
 writing.html
+	actually fill
 resources.html
 	keep up to date
 elsewhere.html 
-	get curious cat logo svg
+	make logos all line up (maybe put handle under them idk)
 404.html
 secret page
+	link to this somewhere secret
 	TRUCK MONTH
 license / terms 
 	page describing gpl3 (ormaybe fwd to gnu site)
